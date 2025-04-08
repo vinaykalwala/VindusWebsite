@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/about.css';
 import missionImage from '../assets/mission.png';
-import visionImage from '../assets/vision.webp';
+import visionImage from '../assets/vision.jpg';
 import valuesImage from '../assets/values.png';
 import aboutBanner from '../assets/AboutUs1.jpg'; 
 

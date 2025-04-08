@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import '../styles/casestudies.css';
 import clientImage1 from '../assets/teja.png';
 import clientImage2 from '../assets/mlc.png';
-import clientImage3 from '../assets/fooden.webp';
-import clientImage4 from '../assets/qtip.jpeg';
+import clientImage3 from '../assets/fooden.jpg';
+import clientImage4 from '../assets/qtip.jpg';
 import clientImage5 from '../assets/seoclient.png';
 import successStoriesBanner from '../assets/CaseStudies.jpg'; 
 

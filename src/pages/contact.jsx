@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaPhone, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import emailjs from 'emailjs-com';
 import '../styles/contact.css';
-import Contact from '../assets/contact.webp';
+import Contact from '../assets/contact.jpg';
 
 const Contactus = () => {
   const [formData, setFormData] = useState({

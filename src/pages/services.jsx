@@ -4,7 +4,7 @@ import SEO from '../assets/Seo.png';
 import Software from '../assets/software.png';
 import AWS from '../assets/cloud.png';
 import Testing from '../assets/Testing.png';
-import Blockchain from '../assets/block.webp';
+import Blockchain from '../assets/block.jpg';
 import IoT from '../assets/iot.png';
 import AI from '../assets/ai.jpg';
 import servicesBanner from '../assets/OurServices.jpg'; 
