@@ -4,6 +4,9 @@ import missionImage from '../assets/mission.png';
 import visionImage from '../assets/vision.jpg';
 import valuesImage from '../assets/values.png';
 import aboutBanner from '../assets/AboutUs1.jpg'; 
+import whoarewe from '../assets/whoarewe.jpg'; 
+import WhyChooseUs from '../assets/whychooseus.jpg';
+import ourjourney from '../assets/ourjourney.png';
 
 const About = () => {
   const whoWeAreRef = useRef(null);
@@ -70,7 +73,7 @@ const About = () => {
             </p>
           </div>
           <div className="image-content">
-            <img src={missionImage} alt="Who We Are" className="section-image" />
+            <img src={whoarewe} alt="Who We Are" className="section-image" />
           </div>
         </div>
       </section>
@@ -85,7 +88,7 @@ const About = () => {
             </p>
           </div>
           <div className="image-content">
-            <img src={visionImage} alt="Our Journey" className="section-image" />
+            <img src={ourjourney} alt="Our Journey" className="section-image" />
           </div>
         </div>
       </section>
@@ -163,7 +166,7 @@ const About = () => {
             </p>
           </div>
           <div className="image-content">
-            <img src={valuesImage} alt="Why Choose Us" className="section-image" />
+            <img src={WhyChooseUs} alt="Why Choose Us" className="section-image" />
           </div>
         </div>
       </section>
