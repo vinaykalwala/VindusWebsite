@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/products.css';
-import Why1 from '../assets/OurProducts.jpeg'; 
+import Why1 from '../assets/OurProducts.jpg'; 
 
 const Products = () => {
   const qtipStoreRef = useRef(null);

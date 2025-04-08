@@ -3,7 +3,7 @@ import '../styles/about.css';
 import missionImage from '../assets/mission.png';
 import visionImage from '../assets/vision.webp';
 import valuesImage from '../assets/values.png';
-import aboutBanner from '../assets/AboutUs1.jpeg'; 
+import aboutBanner from '../assets/AboutUs1.jpg'; 
 
 const About = () => {
   const whoWeAreRef = useRef(null);

@@ -7,7 +7,7 @@ import Testing from '../assets/Testing.png';
 import Blockchain from '../assets/block.webp';
 import IoT from '../assets/iot.png';
 import AI from '../assets/ai.jpg';
-import servicesBanner from '../assets/OurServices.jpeg'; 
+import servicesBanner from '../assets/OurServices.jpg'; 
 import { FaSearch, FaCode, FaCloud, FaMicrochip, FaLink, FaRobot } from 'react-icons/fa';
 
 const servicesData = [

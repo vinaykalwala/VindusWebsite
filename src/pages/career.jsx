@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/career.css';
 import Join from '../assets/join.webp';
-import careerBanner from '../assets/Career.jpeg'; 
+import careerBanner from '../assets/Career.jpg'; 
 
 const Career = () => {
   const [formData, setFormData] = useState({

@@ -6,7 +6,7 @@ import clientImage2 from '../assets/mlc.png';
 import clientImage3 from '../assets/fooden.webp';
 import clientImage4 from '../assets/qtip.jpeg';
 import clientImage5 from '../assets/seoclient.png';
-import successStoriesBanner from '../assets/CaseStudies.jpeg'; 
+import successStoriesBanner from '../assets/CaseStudies.jpg'; 
 
 const CaseStudies = () => {
   const caseStudies = [
