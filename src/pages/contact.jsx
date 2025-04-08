@@ -90,7 +90,7 @@ const Contactus = () => {
         <div className="card-custom">
           <FaPhone size={30} />
           <h4 className='heading'>Call Us</h4>
-          <p>+1 (123) 456-7890</p>
+          <p>+91 4049525396</p>
         </div>
       </div>
 
