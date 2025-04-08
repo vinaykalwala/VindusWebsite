@@ -5,7 +5,7 @@
 
 /* Introduction Section (Header) */
 .introduction {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/CaseStudies.jpeg') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/CaseStudies.jpg') no-repeat center center;
   background: no-repeat;
   width: 100%;
   background-size: cover;
