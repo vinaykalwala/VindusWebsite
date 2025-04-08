@@ -1,0 +1,301 @@
+.how-it-works {
+  padding: 20px 60px;
+  background-color: #F5F6FA; /* Soft gray */
+  color: #333;
+  font-family: 'Inter', sans-serif; /* Added for consistency */
+}
+
+/* Intro Section */
+.how-it-works__intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.how-it-works__heading {
+  font-size: 48px;
+  color: #D4AF37; /* Gold */
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.how-it-works__intro-text {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Services Section */
+.how-it-works__services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
+}
+
+.how-it-works__service-card-how {
+  background: linear-gradient(135deg, #fff, #F0F1F5); /* Subtle gradient */
+  border: 2px solid #D4AF37; /* Gold */
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 30px);
+  padding: 40px 25px 25px 25px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.how-it-works__service-card-how:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3); /* Gold shadow */
+}
+
+.how-it-works__icon-container {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D4AF37; /* Gold */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.how-it-works__service-icon {
+  font-size: 30px;
+  color: #1A2A44; /* Navy blue */
+}
+
+.how-it-works__service-title {
+  font-size: 24px;
+  color: #1A2A44; /* Navy blue */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.how-it-works__service-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  text-align: left;
+}
+
+/* FAQ Section */
+.how-it-works__faq {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.how-it-works__faq-heading {
+  text-align: center;
+  font-size: 32px;
+  color: #1A2A44; /* Navy blue */
+  margin-bottom: 25px;
+  font-weight: 700;
+  position: relative;
+}
+
+.how-it-works__faq-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #1A2A44, #2D3748); /* Navy blue gradient underline */
+  border-radius: 2px;
+}
+
+.how-it-works__accordion {
+  border: none;
+}
+
+.how-it-works__accordion-item {
+  background: #F5F6FA;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.how-it-works__accordion-item:hover {
+  box-shadow: 0 4px 12px rgba(26, 42, 68, 0.2); /* Navy blue shadow on hover */
+}
+
+.how-it-works__accordion-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  background: #FFFFFF;
+  transition: background-color 0.3s ease;
+}
+
+.how-it-works__accordion-question:hover {
+  background-color: #E2E8F0; /* Slightly darker gray for better contrast */
+}
+
+.how-it-works__accordion-question--open {
+  background-color: #1A2A44; /* Navy blue when open */
+  color: #FFFFFF; /* White text when open */
+}
+
+.how-it-works__accordion-question--open .how-it-works__accordion-question-text,
+.how-it-works__accordion-question--open .how-it-works__accordion-icon {
+  color: #FFFFFF; /* White text/icon when open */
+}
+
+.how-it-works__accordion-question-text {
+  font-size: 18px;
+  color: #1A2A44; /* Navy blue */
+  margin: 0;
+  font-weight: 500;
+}
+
+.how-it-works__accordion-question:hover .how-it-works__accordion-question-text {
+  color: #1A2A44; /* Ensure text remains navy blue on hover */
+}
+
+.how-it-works__accordion-icon {
+  font-size: 24px;
+  color: #D4AF37; /* Gold */
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.how-it-works__accordion-question:hover .how-it-works__accordion-icon {
+  color: #D4AF37; /* Ensure icon remains gold on hover */
+}
+
+.how-it-works__accordion-question--open .how-it-works__accordion-icon {
+  transform: rotate(180deg);
+}
+
+.how-it-works__accordion-answer {
+  padding: 15px 20px;
+  background: #FFFFFF;
+  border-top: 1px solid #E2E8F0;
+}
+
+.how-it-works__accordion-answer p {
+  font-size: 16px;
+  color: #1A2A44; /* Navy blue */
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* CTA Section */
+.how-it-works__cta {
+  text-align: center;
+  background: linear-gradient(135deg, #1A2A44, #2D3748); /* Gradient for depth */
+  color: #F5F6FA; /* Soft gray - explicitly set for visibility */
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+.how-it-works__cta-heading {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #F5F6FA; /* Explicitly set to ensure visibility */
+}
+
+.how-it-works__cta-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #F5F6FA; /* Explicitly set to ensure visibility */
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.how-it-works__cta-button {
+  background-color: #D4AF37; /* Gold */
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #1A2A44; /* Navy blue */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.how-it-works__cta-button:hover {
+  background-color: #B8962F; /* Darker gold */
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .how-it-works__service-card-how { width: calc(50% - 30px); }
+}
+
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 15px 20px;
+  }
+
+  .how-it-works__services { 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 50px;
+  }
+
+  .how-it-works__service-card-how { 
+    width: 100%; 
+    padding: 35px 20px 20px 20px;
+  }
+
+  .how-it-works__heading { 
+    font-size: 36px; 
+  }
+
+  .how-it-works__faq-heading { 
+    font-size: 28px; 
+  }
+
+  .how-it-works__cta-heading { 
+    font-size: 24px; 
+  }
+
+  .how-it-works__cta-text { 
+    font-size: 16px; 
+  }
+
+  .how-it-works__cta-button { 
+    font-size: 16px; 
+    padding: 12px 25px; 
+  }
+
+  .how-it-works__accordion-question-text { 
+    font-size: 16px; 
+  }
+
+  .how-it-works__accordion-icon { 
+    font-size: 20px; 
+  }
+}
+
+#heading {
+  font-size: 2.5rem;
+}

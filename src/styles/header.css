@@ -1,0 +1,128 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1A2A44; /* Navy blue */
+  height: 70px;
+  padding: 0 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #F5F6FA; /* Soft gray */
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li:hover {
+  background: rgba(212, 175, 55, 0.1); /* Gold accent on hover */
+  color: #D4AF37; /* Gold */
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar ul .active li {
+  background: rgba(212, 175, 55, 0.2); /* Stronger gold for active */
+  color: #D4AF37; /* Gold */
+}
+
+.logo img {
+  max-height: 50px;
+  width: auto;
+  display: block;
+  margin: 0;
+}
+
+/* Ensure no underline for the Contact Us button and its link */
+.contact-me .contact-btn {
+  padding: 8px 20px;
+  text-decoration: none; /* Explicitly remove underline */
+  background: #D4AF37; /* Gold */
+  color: #1A2A44; /* Navy blue */
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-me a {
+  text-decoration: none; /* Remove underline from the NavLink */
+}
+
+.contact-me .contact-btn:hover {
+  background: #B8962F;
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background: #F5F6FA; /* Soft gray */
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open .line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar .menu.open {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #1A2A44; /* Navy blue */
+    z-index: 999;
+    padding: 20px 0;
+  }
+
+  .navbar .menu.open ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}

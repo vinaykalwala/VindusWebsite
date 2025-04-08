@@ -1,0 +1,201 @@
+.banner {
+  position: relative;
+  background-image: url('https://media.istockphoto.com/id/1135177354/photo/contact-us-blue-keys-buttons-with-mail-and-phone-signs-on-a-computer-keyboard-banner-3d.jpg?s=612x612&w=0&k=20&c=eJAAopG3O2C4FL-_8j-k-iNxL1jNjYfcshEqa1Baxas=');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F5F6FA; /* Soft gray */
+  text-align: center;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 42, 68, 0.8); /* Navy blue overlay */
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #F5F6FA; /* Soft gray */
+  letter-spacing: 1px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: #F5F6FA; /* Soft gray */
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+.card-custom {
+  flex: 1;
+  margin: 15px;
+  background: linear-gradient(135deg, #1A2A44, #14213D); /* Navy blue gradient */
+  border: 3px solid #D4AF37; /* Gold */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 350px;
+  position: relative;
+  overflow: hidden;
+  color: #F5F6FA; /* Soft gray */
+}
+
+.card-custom:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3); /* Gold shadow */
+}
+
+.card-custom h4 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #D4AF37; /* Gold */
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+.card-custom p {
+  font-size: 1rem;
+  color: #F5F6FA; /* Soft gray */
+}
+
+.card-custom::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(212, 175, 55, 0.1); /* Gold overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-custom:hover::after {
+  opacity: 1;
+}
+
+.contact-us {
+  padding: 40px 20px;
+}
+
+.contact-us h2, .contact-us h3 {
+  margin-bottom: 20px;
+  color: #D4AF37; /* Gold */
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+.contact-us img {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 3px solid #D4AF37; /* Gold */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-column {
+  flex: 0.5;
+}
+
+.right-column {
+  flex: 0.5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #1A2A44; /* Navy blue */
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #D4AF37; /* Gold */
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #B8962F; /* Darker gold */
+  outline: none;
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+form button {
+  background-color: #D4AF37; /* Gold */
+  color: #1A2A44; /* Navy blue */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #B8962F; /* Darker gold */
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-custom {
+    max-width: 100%;
+  }
+}

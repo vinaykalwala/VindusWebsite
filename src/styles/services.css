@@ -1,0 +1,222 @@
+.services-container {
+  padding: 30px 30px 50px; /* Reduced top padding */
+  background: #F7F7F7;
+  min-height: 100vh;
+  font-family: 'Georgia', serif;
+  overflow: visible; 
+}
+
+.services-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/OurServices.jpeg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 30px; /* Reduced padding */
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  margin-bottom: 40px; /* Added margin to create space */
+}
+
+.services-header .heading {
+  font-size: 2.8rem;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #D4AF37;
+  display: inline-block;
+  padding-bottom: 10px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.services-header .header-text {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border: 1px solid #E5E5E5;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+  border-color: #D4AF37;
+}
+
+.service-icon {
+  font-size: 45px;
+  color: #D4AF37;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+}
+
+.service-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #E5E5E5;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.03);
+}
+
+.service-text {
+  flex-grow: 1;
+}
+
+.service-text h3 {
+  font-size: 1.8rem;
+  color: #1A2A44;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.5px;
+}
+
+.service-text p {
+  font-size: 1rem;
+  color: #4A4A4A;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.service-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.service-text ul li {
+  background: #F5F5F5;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #1A2A44;
+  transition: all 0.3s ease;
+  font-family: 'Georgia', serif;
+  border: 1px solid #E5E5E5;
+}
+
+.service-text ul li:hover {
+  background: #D4AF37;
+  color: #FFFFFF;
+  border-color: #D4AF37;
+  transform: translateY(-2px);
+}
+
+.service-text .learn-more-btn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #1A2A44;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service-text .learn-more-btn:hover {
+  background: #D4AF37;
+  color: #1A2A44;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(212, 175, 55, 0.3);
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    padding: 40px 20px;
+  }
+
+  .services-header .heading {
+    font-size: 2.2rem;
+  }
+
+  .services-header .header-text {
+    font-size: 1.1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .service-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .service-text p {
+    font-size: 0.95rem;
+  }
+
+  .service-text ul li {
+    font-size: 0.85rem;
+    padding: 7px 15px;
+  }
+
+  .service-image img {
+    height: 160px;
+  }
+
+  .service-text .learn-more-btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}

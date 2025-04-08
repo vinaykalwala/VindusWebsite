@@ -1,0 +1,13 @@
+/* Animation Keyframes */
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .page-transition {
+    animation: fade 0.8s ease-out forwards; /* Initial load animation */
+  }
+  
+  .page-transition.fade {
+    animation: fade 0.8s ease-out forwards; /* Animation when triggered */
+  }

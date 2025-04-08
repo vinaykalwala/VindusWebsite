@@ -1,0 +1,274 @@
+.about-us {
+  font-family: 'Inter', sans-serif;
+  color: #2D3748;
+  background-color: #F7FAFC;
+}
+
+/* Hero Section */
+.hero-section {
+  background-size: contain; /* Fit the image without cropping */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/AboutUs1.jpeg') no-repeat center center;
+  background-position: center;
+  min-height: 400px; /* Ensure enough space for the image */
+  padding: 100px 30px;
+  text-align: center;
+  color: #1A2A44;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  animation: fadeIn 1.5s ease-in-out;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* General Section Styling */
+.who-we-are-section,
+.journey-section,
+.vision-section,
+.mission-section,
+.values-section,
+.why-choose-section {
+  padding: 80px 30px;
+  background: #FFFFFF;
+  margin: 40px 0;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.who-we-are-section.visible,
+.journey-section.visible,
+.vision-section.visible,
+.mission-section.visible,
+.values-section.visible,
+.why-choose-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.section-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.image-content {
+  flex: 1;
+  max-width: 500px;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.who-we-are-section.visible .text-content,
+.who-we-are-section.visible .image-content,
+.journey-section.visible .text-content,
+.journey-section.visible .image-content,
+.vision-section.visible .text-content,
+.vision-section.visible .image-content,
+.mission-section.visible .text-content,
+.mission-section.visible .image-content,
+.values-section.visible .text-content,
+.values-section.visible .image-content,
+.why-choose-section.visible .text-content,
+.why-choose-section.visible .image-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  color: #1A2A44;
+  font-weight: 700;
+  margin-bottom: 25px;
+  position: relative;
+  letter-spacing: 0.3px;
+}
+
+.text-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #D4AF37, #B8962F);
+  border-radius: 2px;
+}
+
+.text-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #4A5568;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.text-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text-content li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #EDF2F7;
+  color: #2D3748;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 12px 0;
+  transition: all 0.3s ease;
+  font-size: 1.05rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.text-content li::before {
+  content: '✅';
+  font-size: 1.2rem;
+}
+
+.text-content li span {
+  font-weight: 600;
+  color: #1A2A44;
+}
+
+.text-content li:hover {
+  background: #D4AF37;
+  color: #FFFFFF;
+  transform: translateX(8px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.text-content li:hover span {
+  color: #FFFFFF;
+}
+
+.section-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .section-content {
+    gap: 40px;
+  }
+
+  .text-content,
+  .image-content {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 300px; /* Reduce height for smaller screens */
+    padding: 80px 20px;
+    background-size: contain; /* Ensure the image fits */
+    background-position: center;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .section-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .section-content.reverse {
+    flex-direction: column;
+  }
+
+  .text-content h2 {
+    font-size: 2rem;
+  }
+
+  .text-content h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  .text-content li {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+
+  .who-we-are-section,
+  .journey-section,
+  .vision-section,
+  .mission-section,
+  .values-section,
+  .why-choose-section {
+    padding: 60px 20px;
+    margin: 30px 0;
+  }
+}

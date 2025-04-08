@@ -1,0 +1,369 @@
+.career-page {
+  background: linear-gradient(180deg, #F5F6FA 0%, #E0E7FF 100%);
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Banner Section */
+.banner-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  min-height: 400px;
+  background-size: contain !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 120px 30px;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.banner-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1A2A44;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  color: #1A2A44;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Openings Section */
+.openings-section {
+  padding: 60px 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.openings-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  color: #1A2A44 !;
+}
+
+.opening-card {
+  background: linear-gradient(135deg, #fff, #F0F1F5);
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.opening-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
+
+.opening-card h3 {
+  font-size: 1.6rem;
+  color: #1A2A44;
+  margin-bottom: 15px;
+}
+
+.experience-level {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Why Work With Us */
+.why-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #fff, #F5F6FA);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.why-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-item {
+  background: linear-gradient(135deg, #fff, #fff);
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  color: #F5F6FA;
+  border: #1A2A44;
+}
+
+.why-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+
+.why-item .icon {
+  font-size: 2rem;
+  margin-right: 15px;
+  color: #D4AF37;
+}
+
+.why-item p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Life at Vindus */
+.life-section {
+  padding: 60px 20px;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.life-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.life-text {
+  flex: 1;
+}
+
+.life-text p, .life-text ul {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.life-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.life-text ul li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.life-text ul li:before {
+  content: '✔';
+  color: #D4AF37;
+  position: absolute;
+  left: 0;
+}
+
+.life-text blockquote {
+  font-style: italic;
+  color: #1A2A44;
+  font-size: 1.3rem;
+  border-left: 5px solid #D4AF37;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.life-image {
+  flex: 1;
+}
+
+.life-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+.form-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #fff, #F5F6FA);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-intro a {
+  color: #1A2A44;
+  text-decoration: none;
+}
+
+.form-intro a:hover {
+  text-decoration: underline;
+  color: #1A2A44;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1A2A44;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid #D4AF37;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #B8962F;
+  outline: none;
+}
+
+.submit-btn {
+  background: #D4AF37;
+  color: #1A2A44;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #B8962F;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* Internship Section */
+.internship-section {
+  padding: 60px 20px;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.internship-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.internship-card {
+  background: linear-gradient(135deg, #fff, #F0F1F5);
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(26, 42, 68, 0.1);
+  transition: all 0.3s ease;
+}
+
+.internship-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(26, 42, 68, 0.1);}
+
+.internship-card h3 {
+  font-size: 1.6rem;
+  color: #1A2A44;
+  margin-bottom: 15px;
+}
+
+.internship-card p {
+  font-size: 1rem;
+  color: #333131;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.internship-details {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.internship-details p {
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .internship-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .internship-card {
+    width: 100%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-section {
+    min-height: 300px; /* Reduce height for smaller screens */
+    padding: 80px 20px;
+    background-size: contain; /* Ensure the image fits */
+    background-position: center;
+  }
+
+  .openings-list, .why-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .opening-card, .why-item {
+    width: 100%;
+  }
+}

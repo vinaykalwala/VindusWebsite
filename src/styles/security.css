@@ -1,0 +1,138 @@
+.security-container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #F5F6FA, #E5E6EA); /* Subtle gradient */
+  border-radius: 15px;
+}
+
+.security-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: linear-gradient(135deg, #1A2A44, #14213D); /* Navy blue gradient */
+  color: #F5F6FA; /* Soft gray */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #D4AF37; /* Gold */
+}
+
+.security-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.security-date {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.security-intro,
+.security-vision,
+.security-commitments,
+.policy-implementation,
+.scope-applicability,
+.security-risk-management,
+.security-data-protection,
+.security-network-security,
+.security-incident-response,
+.security-vendor-management {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #D4AF37; /* Gold */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.security-intro:hover,
+.security-vision:hover,
+.security-commitments:hover,
+.policy-implementation:hover,
+.scope-applicability:hover,
+.security-risk-management:hover,
+.security-data-protection:hover,
+.security-network-security:hover,
+.security-incident-response:hover,
+.security-vendor-management:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3); /* Gold shadow */
+}
+
+.security-header h1 {
+  font-size: 1.5rem;
+}
+
+.security-intro p {
+  font-size: large;
+}
+
+.security-subheading {
+  font-size: 1.5rem;
+  color: #D4AF37; /* Gold */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #D4AF37; /* Gold */
+  padding-bottom: 10px;
+}
+
+.icon-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #D4AF37; /* Gold */
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.list-icon {
+  font-size: 1rem;
+  color: #D4AF37; /* Gold */
+  margin-right: 10px;
+}
+
+.security-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.security-list li {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.security-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  padding: 15px;
+  font-size: 16px;
+  color: #D4AF37; /* Gold */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.security-footer:hover {
+  color: #B8962F; /* Darker gold */
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .security-heading { font-size: 1.8rem; }
+  .security-subheading { font-size: 1.3rem; }
+  .security-list li { font-size: 0.9rem; }
+}
