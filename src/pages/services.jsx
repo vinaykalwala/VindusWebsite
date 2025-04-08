@@ -79,6 +79,7 @@ const Services = () => {
             <div className="service-image">
               <img src={service.imgSrc} alt={service.title} />
             </div>
+            
             <div className="service-text">
               <h3>{service.title}</h3>
               <p>{service.description}</p>
