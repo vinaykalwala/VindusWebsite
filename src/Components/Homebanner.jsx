@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/homebanner.css';
 import Banner1 from '../assets/banner22.jpeg';
 import Banner2 from '../assets/banner11.jpg';
-import Banner3 from '../assets/banner12.jpg';
+import Banner3 from '../assets/banner3.png';
 import Banner4 from '../assets/banner13.jpg';
 import Banner5 from '../assets/banner21.jpg';
 
